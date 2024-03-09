@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,6 +10,7 @@
 		href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:wght@400;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles/main.css">
+	<script src="./app.js" defer></script>
 	<link rel="shortcut icon" href="./images/horse.ico">
 	<title>Клуб четырех коней</title>
 </head>
@@ -62,7 +63,6 @@
 		<span></span> Шахматы двигают вперед
 		не только культуру, но и экономику! <span></span> Лед тронулся, господа присяжные заседатели! <span></span>
 	</marquee>
-	<!-- как по смыслу этот блок назвать? -->
 	<main>
 		<section class="section section--announcement">
 			<div class="container">
@@ -159,8 +159,64 @@
 		<section class="section section--members">
 			<div class="container">
 				<div class="members-inner">
-
+					<div class="members-head">
+						<h2 class="section-title">участники турнира</h2>
+						<div class="member-arrow-wrapper">
+							<div class="member-arrow" id="MEMBER-ARROW-LEFT">
+								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.5382 18.4614L2.07666 9.99989L10.5382 1.53835" stroke="white" stroke-width="2"
+										stroke-linecap="square" />
+								</svg>
+							</div>
+							<p>3 <span>/ 6</span></p>
+							<div class="member-arrow" id="MEMBER-ARROW-RIGHT">
+								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.4618 1.53845L9.92334 9.99999L1.4618 18.4615" stroke="white" stroke-width="2"
+										stroke-linecap="square" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="members-carousel">
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Хозе-Рауль Капабланка</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Эммануил Ласкер</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Александр Алехин</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Арон Нимцович</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Рихард Рети</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+						<div class="members-item">
+							<img src="./images/member.png" alt="Фото участника">
+							<h3 class="member-name">Остап Бендер</h3>
+							<p class="member-title">Чемпион мира по шахматам</p>
+							<a href="#" class="member-link" target="_blank">Подробнее</a>
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</section>
 	</main>

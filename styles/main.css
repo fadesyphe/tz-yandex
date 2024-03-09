@@ -32,13 +32,14 @@ a {
 
 /* BASE */
 .section {
-
+	margin-top: 200px
 }
 .section-title {
 	font-family: "Merriweather", sans-serif;
 	font-weight: 400;
 	font-size: 54px;
 	line-height: 1.2;
+	text-transform: uppercase;
 }
 .running-line {
 	color: #FFF;
@@ -226,7 +227,6 @@ a {
 /* STAGE */
 
 .section--stage {
-	margin-top: 200px;
 }
 .stage-inner {
 	position: relative;
@@ -240,12 +240,13 @@ a {
 	position: absolute;
 	z-index: 5;
 	top: 75px;
-	left: 260px;
+	left: 300px;
 	display: flex;
 	width: 100%;
 	max-width: 280px;
 	font-family: "Golos Text", sans-serif;
 	font-size: 20px;
+	text-transform: none;
 	color: #3057A2;
 }
 .stage-wrapper {
@@ -293,4 +294,81 @@ a {
 	z-index: 5;
 	right: -62px;
 	bottom: 2px;
+}
+
+/* MEMBERS */
+.section--members {
+}
+.members-inner {
+}
+.members-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.members-carousel {
+	display: flex;
+	margin-top: 60px;
+	overflow-x: hidden;
+	gap: 20px;
+}
+.member-arrow-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+.member-arrow-wrapper span {
+	opacity: .7;
+}
+.member-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #313131;
+	transition: .6s ease;
+	cursor: pointer
+}
+.member-arrow:first-child svg {
+	transform: translateX(-2px);
+}
+.member-arrow:last-child svg {
+	transform: translateX(2px);
+}
+.member-arrow:disabled {
+	background-color: #D6D6D6;
+}
+.member-arrow:hover {
+	background-color: #FBCE51;
+}
+.members-item {
+	padding: 0 37px 20px;
+}
+.member-name {
+	font-weight: 600px;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 28px 0 6px 0
+}
+.member-title {
+	font-size: 20px;
+	line-height: 1.2;
+	opacity: .6;
+	margin-bottom: 20px;
+}
+.member-link {
+	margin: 0 auto;
+	text-align: center;
+	color: #3057A2;
+	font-weight: 500;
+	padding: 12px;
+	border-radius: 62px;
+	border: 1px solid #3057A2;
+	transition: 1s ease;
+}
+.member-link:hover {
+	color: #FFF;
+	background-color: #3057A2;
 }
