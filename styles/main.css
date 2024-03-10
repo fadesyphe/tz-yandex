@@ -422,6 +422,7 @@ a {
 }
 .arrow-wrapper--stage {
 	justify-content: center;
+	display: none;
 }
 .arrow-wrapper--member {
 	position: absolute;
@@ -603,6 +604,9 @@ a {
 	}
 	.arrow-wrapper--member {
 		position: static;
+	}
+	.arrow-wrapper--stage {
+		display: flex;
 	}
 	.stage-carousel {
 		display: block;
