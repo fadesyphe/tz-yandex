@@ -53,8 +53,8 @@
 						<p class="header-text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по
 							шахматам</p>
 						<div class="header-buttons-wrapper">
-							<a href="#" class="header-button">Поддержать шахматную мысль</a>
-							<a href="#" class="header-button">Подробнее о турнире</a>
+							<a href="#ANNOUNCEMENT" class="header-button">Поддержать шахматную мысль</a>
+							<a href="#MEMBERS" class="header-button">Подробнее о турнире</a>
 						</div>
 					</div>
 				</div>
@@ -67,15 +67,22 @@
 		не только культуру, но и экономику! <span></span> Лед тронулся, господа присяжные заседатели! <span></span>
 	</marquee>
 	<main>
-		<section class="section section--announcement">
+		<section class="section section--announcement" id="ANNOUNCEMENT">
 			<div class="container">
 				<div class="announcement-inner">
 					<div class="announcement-top">
-						<p class="announcement-text">Чтобы поддержать <br> Международный васюкинский турнир посетите лекцию на тему:
-							<span>«Плодотворная дебютная
-								идея»</span>
+						<p class="announcement-text">Чтобы поддержать <br> Международный васюкинский турнир
+							<span class="desktop">
+								посетите лекцию на тему:
+								<span>«Плодотворная дебютная
+									идея»</span>
+							</span>
 						</p>
 						<img src="./images/chess-play.png" alt="шахматная партия">
+						<p class="announcement-text announcement-text--mobile">
+							посетите лекцию на тему: <span>«Плодотворная дебютная
+								идея»</span>
+						</p>
 					</div>
 					<div class="announcement-session">
 						<img src="./images/test.png" alt="" class="sesstion-left">
@@ -115,8 +122,9 @@
 		<section class="section section--stage">
 			<div class="container">
 				<div class="stage-inner">
-					<h2 class="section-title">Этапы преображения Васюков</span>
-					</h2>
+					<h2 class="section-title">Этапы преображения Васюков</h2>
+					<h3 class="section-subtitle--mobile">Будущие источники обогащения васюкинцев</h3>
+					<img src="./images/airplane.png" alt="аэроплан" class="stage-image">
 					<div class="stage-wrapper">
 						<div class="stage-item">
 							<div class="stage-number">1</div>
@@ -151,7 +159,64 @@
 								включая Лос-Анжелос и Мельбурн</p>
 						</div>
 					</div>
-					<img src="./images/airplane.png" alt="аэроплан" class="stage-image">
+					<div class="stage-carousel">
+						<div class="stage-line">
+							<div class="stage-item">
+								<div class="stage-number">1</div>
+								<p class="stage-description">Строительство железнодорожной магистрали Москва-Васюки</p>
+								<div class="stage-item--mobile">
+									<div class="stage-number">2</div>
+									<p class="stage-description">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+									</p>
+								</div>
+							</div>
+							<div class="stage-item">
+								<div class="stage-number">3</div>
+								<p class="stage-description">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
+									овощей, фруктов, икры, шоколадных конфет</p>
+							</div>
+							<div class="stage-item">
+								<div class="stage-number">4</div>
+								<p class="stage-description">Строительство дворца для турнира</p>
+								<div class="stage-item--mobile">
+									<div class="stage-number">5</div>
+									<p class="stage-description">Размещение гаражей для гостевого автотранспорта</p>
+								</div>
+							</div>
+							<div class="stage-item">
+								<div class="stage-number">6</div>
+								<p class="stage-description">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
+									результатов</p>
+							</div>
+							<div class="stage-item">
+								<div class="stage-number">7</div>
+								<p class="stage-description">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых
+									самолётов и дирижаблей во все концы света,
+									включая Лос-Анжелос и Мельбурн</p>
+							</div>
+						</div>
+					</div>
+					<div class="arrow-wrapper arrow-wrapper--stage">
+						<div class="arrow" id="STAGE-ARROW-LEFT">
+							<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.5382 18.4614L2.07666 9.99989L10.5382 1.53835" stroke="white" stroke-width="2"
+									stroke-linecap="square" />
+							</svg>
+						</div>
+						<div class="dots-wrapper">
+							<span class="active" data-id="1"></span>
+							<span data-id="2"></span>
+							<span data-id="3"></span>
+							<span data-id="4"></span>
+							<span data-id="5"></span>
+						</div>
+						<div class="arrow disabled" id="STAGE-ARROW-RIGHT">
+							<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.4618 1.53845L9.92334 9.99999L1.4618 18.4615" stroke="white" stroke-width="2"
+									stroke-linecap="square" />
+							</svg>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -159,26 +224,12 @@
 		<!-- /STAGE section -->
 
 
-		<section class="section section--members">
+		<section class="section section--members" id="MEMBERS">
 			<div class="container">
 				<div class="members-inner">
 					<div class="members-head">
 						<h2 class="section-title">участники турнира</h2>
-						<div class="member-arrow-wrapper">
-							<div class="member-arrow" id="MEMBER-ARROW-LEFT">
-								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M10.5382 18.4614L2.07666 9.99989L10.5382 1.53835" stroke="white" stroke-width="2"
-										stroke-linecap="square" />
-								</svg>
-							</div>
-							<p><span class="opacity">3</span> / 6</p>
-							<div class="member-arrow" id="MEMBER-ARROW-RIGHT">
-								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.4618 1.53845L9.92334 9.99999L1.4618 18.4615" stroke="white" stroke-width="2"
-										stroke-linecap="square" />
-								</svg>
-							</div>
-						</div>
+
 					</div>
 					<div class="members-carousel">
 						<div class="members-line">
@@ -229,6 +280,23 @@
 								<div>
 									<a href="#" class="member-link" target="_blank">Подробнее</a>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div style="display: flex; justify-content: center;">
+						<div class="arrow-wrapper arrow-wrapper--member">
+							<div class="arrow" id="MEMBER-ARROW-LEFT">
+								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.5382 18.4614L2.07666 9.99989L10.5382 1.53835" stroke="white" stroke-width="2"
+										stroke-linecap="square" />
+								</svg>
+							</div>
+							<p><span class="opacity">3</span> / 6</p>
+							<div class="arrow" id="MEMBER-ARROW-RIGHT">
+								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.4618 1.53845L9.92334 9.99999L1.4618 18.4615" stroke="white" stroke-width="2"
+										stroke-linecap="square" />
+								</svg>
 							</div>
 						</div>
 					</div>
