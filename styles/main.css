@@ -61,8 +61,13 @@ a {
 }
 /* HEADER */
 .header {
-	background: url("../images/header-bg.jpg") no-repeat;
+	background: url("../images/header-phone.png") no-repeat;
 	background-size: cover;
+	background-position: center;
+}
+.header-wrapper {
+	background: url("../images/header-bg.jpg") no-repeat;
+	background-size: contain;
 	background-position: center;
 }
 .header-inner {
@@ -138,9 +143,8 @@ a {
 
 
 /* announcement */
-.section {
-}
 .section--announcement {
+	margin-top: 80px;
 }
 .announcement-inner {
 	padding-top: 80px;
@@ -298,6 +302,7 @@ a {
 
 /* MEMBERS */
 .section--members {
+	margin-bottom: 140px;
 }
 .members-inner {
 }
@@ -307,18 +312,66 @@ a {
 	align-items: center;
 }
 .members-carousel {
-	display: flex;
 	margin-top: 60px;
+	height: 480px;
 	overflow-x: hidden;
+	position: relative;
+}
+.members-line {
+	display: flex;
 	gap: 20px;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	transition: all .3s ease;
+}
+.members-item {
+	padding: 0 37px;
+	transition: .3s ease;
+}
+.members-item div:has(a.member-link) {
+	display: flex;
+	justify-content: center;
+}
+.member-name {
+	font-weight: 600px;
+	font-size: 24px;
+	line-height: 1.2;
+	margin: 28px 0 6px;
+	text-align: center;
+}
+.member-title {
+	font-size: 20px;
+	line-height: 1.2;
+	opacity: .6;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.member-link {
+	margin: 0 auto;
+	text-align: center;
+	color: #3057A2;
+	font-weight: 500;
+	padding: 12px;
+	border-radius: 62px;
+	border: 1px solid #3057A2;
+	transition: 1s ease;
+}
+.member-link:hover {
+	color: #FFF;
+	background-color: #3057A2;
 }
 .member-arrow-wrapper {
 	display: flex;
 	align-items: center;
 	gap: 14px;
 }
-.member-arrow-wrapper span {
-	opacity: .7;
+.member-arrow-wrapper p {
+	opacity: .6;
+}
+.member-arrow-wrapper p span.opacity {
+	opacity: 1;
 }
 .member-arrow {
 	display: flex;
@@ -343,32 +396,15 @@ a {
 .member-arrow:hover {
 	background-color: #FBCE51;
 }
-.members-item {
-	padding: 0 37px 20px;
+
+/* FOOTER */
+
+.footer {
+	background-color: #E9DED4;
 }
-.member-name {
-	font-weight: 600px;
-	font-size: 24px;
-	line-height: 1.2;
-	margin: 28px 0 6px 0
+.footer-inner {
+	padding: 40px 0 70px;
 }
-.member-title {
-	font-size: 20px;
-	line-height: 1.2;
+.footer-inner p {
 	opacity: .6;
-	margin-bottom: 20px;
-}
-.member-link {
-	margin: 0 auto;
-	text-align: center;
-	color: #3057A2;
-	font-weight: 500;
-	padding: 12px;
-	border-radius: 62px;
-	border: 1px solid #3057A2;
-	transition: 1s ease;
-}
-.member-link:hover {
-	color: #FFF;
-	background-color: #3057A2;
 }
