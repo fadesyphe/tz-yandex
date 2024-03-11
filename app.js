@@ -12,24 +12,25 @@ let offsetMember = 0;
 let countMember = 0;
 
 memberArrowLeft.addEventListener("click", () => {
-	offsetMember += widthMember + 20
-	if (countMember == maxCountMember) {
-		offsetMember = 0
-		countMember = minCountMember
-	} else {
-		countMember++
-	}
-	countSliderMembers.innerHTML = countMember
-	memberLine.style.left = '-' + offsetMember + 'px'
-})
 
-memberArrowRight.addEventListener("click", () => {
 	offsetMember -= widthMember + 20;
 	if (countMember == minCountMember) {
 		offsetMember = widthMember * (maxCountMember - minCountMember) + (maxCountMember - minCountMember) * 20
 		countMember = maxCountMember
 	} else {
 		countMember--
+	}
+	countSliderMembers.innerHTML = countMember
+	memberLine.style.left = '-' + offsetMember + 'px'
+})
+
+memberArrowRight.addEventListener("click", () => {
+	offsetMember += widthMember + 20
+	if (countMember == maxCountMember) {
+		offsetMember = 0
+		countMember = minCountMember
+	} else {
+		countMember++
 	}
 	countSliderMembers.innerHTML = countMember
 	memberLine.style.left = '-' + offsetMember + 'px'
@@ -62,13 +63,14 @@ let countStage = 1;
 let offsetStage = 0;
 
 stageArrowLeft.addEventListener("click", () => {
+
 	if (stageArrowLeft.classList.contains('disabled')) {
 		return
 	}
-	countStage++
+	countStage--
 	toggleClassDots()
 	checkArrowDisabled()
-	offsetStage += stageItemWidth + 20;
+	offsetStage -= stageItemWidth + 20;
 	stageLine.style.left = '-' + offsetStage + 'px'
 })
 
@@ -76,10 +78,10 @@ stageArrowRight.addEventListener("click", () => {
 	if (stageArrowRight.classList.contains('disabled')) {
 		return
 	}
-	countStage--
+	countStage++
 	toggleClassDots()
 	checkArrowDisabled()
-	offsetStage -= stageItemWidth + 20;
+	offsetStage += stageItemWidth + 20;
 	stageLine.style.left = '-' + offsetStage + 'px'
 })
 
@@ -95,11 +97,11 @@ for (let dot of dotsStage) {
 
 function checkArrowDisabled() {
 	if (countStage == maxCountStage) {
-		stageArrowLeft.classList.add('disabled');
-		stageArrowRight.classList.remove("disabled")
-	} else if (countStage == 1) {
-		stageArrowLeft.classList.remove("disabled")
+		stageArrowLeft.classList.remove('disabled');
 		stageArrowRight.classList.add("disabled")
+	} else if (countStage == 1) {
+		stageArrowLeft.classList.add("disabled")
+		stageArrowRight.classList.remove("disabled")
 	}
 	else {
 		stageArrowLeft.classList.remove("disabled")
